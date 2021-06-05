@@ -5,7 +5,7 @@ from pyglet.gl import *
 import time
 
 code = "00000000001010101010" #bit sequence to transmit
-alpha = 0.9 #0.5
+alpha = 0.5
 frame_rate = 2
 frame_buffer_len = 6
 code_len = len(code)
@@ -21,7 +21,7 @@ def main():
 	img_sprite = pyglet.sprite.Sprite(img)
 	window = pyglet.window.Window()
 	window.set_fullscreen()
-	img_sprite.scale = 10.0
+	img_sprite.scale = 3.0
 
 	label = pyglet.text.Label(curr_bit,
                           font_name='Times New Roman',
